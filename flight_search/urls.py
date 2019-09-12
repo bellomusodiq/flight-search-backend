@@ -23,5 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/get_suggestion/', GetSuggestion.as_view()),
     path('api/flight_search/', SearchFlight.as_view()),
-    # path('load_airport_to_database/', load_database)
+    path('load_airport_to_database/', load_database)
 ]
