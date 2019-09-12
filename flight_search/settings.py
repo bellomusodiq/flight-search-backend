@@ -83,12 +83,8 @@ WSGI_APPLICATION = 'flight_search.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ddpsed08itbq88',
-        'USER': 'zupvlpoblxkhfh',
-        'PASSWORD': 'ded354ad920004d2cfb153f3393e218840417869b3083a74b049ee7456f07c82',
-        'HOST': 'postgres://zupvlpoblxkhfh:ded354ad920004d2cfb153f3393e218840417869b3083a74b049ee7456f07c82@ec2-107-20-155-148.compute-1.amazonaws.com:5432/ddpsed08itbq88',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
